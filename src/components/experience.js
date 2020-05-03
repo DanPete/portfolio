@@ -27,8 +27,6 @@ const JobsContainer = styled.div`
 `
 
 const SkillsContainer = styled.div`
-  position: relative;
-  top: -4em;
 
 `
 
