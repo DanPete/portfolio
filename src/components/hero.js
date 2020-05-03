@@ -137,6 +137,10 @@ const HeroCTA = styled.a`
     transition-delay: unset;
   }
 
+  ${media.small} {
+    margin-top: 1em;
+  }
+
 `
 
 const Hero = ({ data, bgColor }) => {

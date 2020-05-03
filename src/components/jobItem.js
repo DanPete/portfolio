@@ -52,6 +52,9 @@ const FirstRow = styled.div`
     background-repeat: no-repeat;
     transition: ${theme.transition};
   }
+  ${media.small} {
+    flex-direction: column;
+  }
 `
 
 const SecondRow = styled.div`

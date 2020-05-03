@@ -14,12 +14,9 @@ import Contact from '../components/contact'
 
 import SEO from "../components/seo"
 
-import { Element } from 'react-scroll'
-import ScrollReveal from 'scrollreveal'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    {/* {console.log(data)} */}
     <SEO title="Home" />
     <Hero data={data.hero}/>
     <Projects data={data.mdProjects.edges} />
