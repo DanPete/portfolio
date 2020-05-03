@@ -6,7 +6,7 @@ import { theme } from '../../styles'
 const SkillsContainer = styled.div`
   li {
     list-style: none;
-    display: inline;
+    display: inline-block;
     margin-right: 1em;
     font-size: 0.8rem;
   }

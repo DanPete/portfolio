@@ -22,6 +22,10 @@ const theme = {
   specificTransition: '0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
   mediaSizes: {
+    xsmall: {
+      selector: 'max-width',
+      values: '350px'
+    },
     small: {
       selector: 'max-width',
       values: '640px'

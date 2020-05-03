@@ -60,7 +60,7 @@ const SkillList = styled.div`
   justify-content: space-around;
   width: 100%;
   ${media.small} {
-    /* grid-column-gap: 10px; */
+    grid-column-gap: 10px;
   }
 `
 const SkillWrapper = styled.div`
@@ -70,7 +70,7 @@ const SkillWrapper = styled.div`
     margin-right: 1em;
     width: 30px;
   }
-  ${media.small} {
+  ${media.xsmall} {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -86,6 +86,8 @@ const Skill = styled.div`
   align-self: center;
   ${media.small} {
     font-size: 1.125rem;
+  }
+  ${media.xsmall} {
     margin-top: 0.5em;
   }
 `
