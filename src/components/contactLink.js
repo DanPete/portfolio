@@ -24,6 +24,11 @@ const Container = styled.a`
   &:hover svg {
     fill: white;
   }
+  ${media.small} {
+    flex-basis: 40%;
+    padding: 0.7em;
+    margin-top: 1em;
+  }
 `
 const Wrapper = styled.div`
   display: flex;

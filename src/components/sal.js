@@ -37,7 +37,7 @@ Sal.defaultProps = {
   as: 'div',
   children: null,
   animation: 'slide-up',
-  duration: '600',
+  duration: '400',
   delay: '0',
   easing: '',
 };

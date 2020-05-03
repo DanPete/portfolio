@@ -2,6 +2,7 @@ import {theme, media } from '@styles'
 import styled from 'styled-components'
 
 const NavButton = styled.div`
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;

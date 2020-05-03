@@ -3,17 +3,17 @@ import styled from 'styled-components'
 
 import { theme, media } from '../styles'
 
-import rewind from '../images/icons/rewind.svg'
 import { FormattedIcon } from './icons'
 
 
 const SkillContainer = styled.div`
-  /* display: flex; */
+  ${media.mediumUp} {
+    position: relative;
+    top: -3.5em;
+  }
 `
 
-const Tabs = styled.div`
-  
-`
+const Tabs = styled.div``
 
 const TabList = styled.div`
   display: flex;
@@ -33,9 +33,7 @@ const Tab = styled.h4`
   }
 `
 
-const ContentContainer = styled.div`
-  
-`
+const ContentContainer = styled.div``
 
 const Content = styled.div`
   background-color: ${theme.colors.darkBlueLighter};
@@ -50,6 +48,9 @@ const Content = styled.div`
     display: flex;
     opacity: 1;
   }
+  ${media.small} {
+    padding: 1em;
+  }
 `
 
 const SkillList = styled.div`
@@ -58,6 +59,9 @@ const SkillList = styled.div`
   grid-gap: 20px;
   justify-content: space-around;
   width: 100%;
+  ${media.small} {
+    grid-column-gap: 10px;
+  }
 `
 const SkillWrapper = styled.div`
   display: flex;
@@ -72,25 +76,9 @@ const Skill = styled.div`
   color: ${theme.colors.light};
   font-size: 1.25rem;
   align-self: center;
-  /* &::before {
-    content: '';
-    color: ${theme.colors.light};
-    position: relative;
-    left: 0;
-    height: 12px;
-    width: 12px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-image: url('${rewind}');
-    background-size: 12px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    padding-right: 0.5em
-  } */
-  /* ${media.small} {
-    font-size: 1.25rem;
-  } */
+  ${media.small} {
+    font-size: 1.125rem;
+  }
 `
 
 const SkillItem = ({skills}) => {

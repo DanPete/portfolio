@@ -74,6 +74,7 @@ const NavLink = styled(ScrollLink)`
 
 const MobileNavContainer = styled.div`
   position: fixed;
+  z-index: 1;
 
   &.closed {
     visibility: hidden;
@@ -100,7 +101,7 @@ const MobileNav = styled.div`
   width: 100vw;
   transform: translateY(-100vh);
   background-color: ${theme.colors.light};
-  padding: 5em 4em;
+  padding: 2em 4em;
   opacity: 1;
   z-index: 100;
   transition: ${theme.transition};
@@ -109,13 +110,25 @@ const MobileNav = styled.div`
   &.open {
     transform: translateY(0);
     transition-delay: 0s;
+    a {
+      opacity: 1
+    }
   }
-
-
-
 ` 
-const MobileNavLinks = styled.div`` 
-const MobileNavLink = styled(ScrollLink)`` 
+const MobileNavLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`
+
+const MobileNavLink = styled(ScrollLink)`
+  color: ${theme.colors.dark};
+  font-size: 3rem;
+  margin-top: 1em;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 1.5s
+` 
 
 
 const Navigation = () => {
@@ -160,15 +173,15 @@ const Navigation = () => {
         <MobileNav className={`${openNav ? 'open' : 'closed'}`}>
           <MobileNavLinks>
             <MobileNavLink href="#projects" offset={-30} to="projects" {...scrollOptions}>Project</MobileNavLink>
-            <MobileNavLink href="#experience" offset={-30} to="projects" {...scrollOptions}>Experience</MobileNavLink>
-            <MobileNavLink href="#contact" offset={-30} to="projects" {...scrollOptions}>Contact</MobileNavLink>
+            <MobileNavLink href="#experience" offset={-30} to="experience" {...scrollOptions}>Experience</MobileNavLink>
+            <MobileNavLink href="#contact" offset={-30} to="contact" {...scrollOptions}>Contact</MobileNavLink>
           </MobileNavLinks>
         </MobileNav>
         <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
       </MobileNavContainer>
       <Nav className={ scrolledTop ? 'top' : 'scrolled'}>
         <a onClick={() => scroll.scrollToTop()}>
-          <NavLogo className={scrolledTop ? 'top' : 'scrolled'} src={Logo} alt="Dan Sack Web Dev" />
+          <NavLogo className={`${scrolledTop ? 'top' : 'scrolled'} ${openNav ? 'open' : 'closed'}`} src={Logo} alt="Dan Sack Web Dev" />
         </a>
         <NavRight className={scrolledTop ? 'top' : 'scrolled'}>
           <NavLink href="#projects" offset={-30} to="projects" {...scrollOptions}>Projects</NavLink>
