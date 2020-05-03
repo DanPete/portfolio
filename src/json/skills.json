@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Front End",
+    "skills": [
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "Redux",
+        "icon": "redux"
+      },
+      {
+        "name": "Ruby on Rails",
+        "icon": "ror"
+      },
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "SCSS",
+        "icon": "scss"
+      },
+      {
+        "name": "Shopify",
+        "icon": "shopify"
+      },
+      {
+        "name": "Liquid",
+        "icon": "liquid"
+      },
+      {
+        "name": "WordPress",
+        "icon": "wordpress"
+      },
+      {
+        "name": "Squarespace",
+        "icon": "squarespace"
+      },
+      {
+        "name": "Gatsby",
+        "icon": "gatsby"
+      },
+      {
+        "name": "Styled Components",
+        "icon": "styled"
+      }
+    ],
+    "open": true
+  },
+  {
+    "title": "Back End",
+    "skills": [
+      {
+        "name": "Node.js",
+        "icon": "node"
+      },
+      {
+        "name": "Ruby",
+        "icon": "ruby"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Hosting",
+        "icon": "hosting"
+      },
+      {
+        "name": "Linux & Ubuntu",
+        "icon": "ubuntu"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "D3",
+        "icon": "dthree"
+      }
+    ],
+    "open": false
+  }
+]

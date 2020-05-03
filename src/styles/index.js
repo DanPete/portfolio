@@ -4,6 +4,7 @@ import Container from './container'
 import Section from './section'
 import media from './media'
 import GlobalStyles from './GlobalStyles'
+import NavButton from './navButton'
 
 export {
   theme,
@@ -11,4 +12,5 @@ export {
   Section,
   media,
   GlobalStyles,
+  NavButton
 }

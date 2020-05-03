@@ -87,6 +87,19 @@ module.exports = {
           include: `${__dirname}/src/images/svgs`
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'projectsJson',
+        imagePath: 'nodes[].img'
+      }
     }
   ],
 }

@@ -43,7 +43,7 @@ const theme = {
     },
   },
 
-  maxWidth: '1100px',
+  maxWidth: '1300px',
   borderRadius: '5px',
 
   fonts: {

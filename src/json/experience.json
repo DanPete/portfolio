@@ -1,0 +1,33 @@
+[
+  {
+    "company": "SAIO",
+    "dates": "March 2019 — Current",
+    "position": "Front End Developer",
+    "copy": "Some text here to describe what I do at this job. Some text here to describe what I do at this job. Some text here to describe what I do at this job.",
+    "skills": [
+      "Shopify",
+      "Wordpress",
+      "HTML / SCSS",
+      "Figma",
+      "React",
+      "Ruby on Rails"
+    ],
+    "open": true
+  },
+  {
+    "company": "Self",
+    "dates": "January 2017 — Current",
+    "position": "Freelancing",
+    "copy": "Some text here to describe what I do at this job. Some text here to describe what I do at this job. Some text here to describe what I do at this job.",
+    "skills": [
+      "Shopify",
+      "Wordpress",
+      "HTML / SCSS",
+      "Figma",
+      "React",
+      "Ruby on Rails"
+    ],
+    "open": false
+  }
+  
+]

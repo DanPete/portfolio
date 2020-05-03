@@ -9,6 +9,7 @@ export const MarkdownFragment = graphql`
           title
           excerpt
           skills
+          link
           featuredImage {
             childImageSharp {
               fluid(maxWidth: 600) {

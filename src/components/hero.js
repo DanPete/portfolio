@@ -38,6 +38,7 @@ const HeroContainer = styled.div`
   align-items: center;
   ${media.small} {
     display: block;
+    margin-top: 2em;
   }
 `
 const HeroImg = styled.div`
@@ -47,7 +48,12 @@ const HeroImg = styled.div`
   margin: 0 auto;
   width: 65%;
   ${media.mediumUp} {
-    width: 45%;
+    width: 40%;
+  }
+  ${media.largeUp} {
+    width: 30%;
+    margin-left: auto;
+    margin-right: 5em;
   }
   img {
     border-radius: 50%;
@@ -159,7 +165,7 @@ const Hero = ({ data, bgColor }) => {
     <HeroLink href={data.companyURL} target="_blank"> {data.company}</HeroLink>
   </HeroCopy>)
   const four = () => <HeroSubCopy style={{ transitionDelay: '500ms'}}>{data.subCopy}</HeroSubCopy>
-  const five = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="#" >Contact Me</HeroCTA></div>
+  const five = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
   
   const items = [one, two, three, four, five]
   console.log(theme.colors.gray)

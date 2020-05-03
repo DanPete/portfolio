@@ -2,7 +2,7 @@ import React, {useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link as ScrollLink, Events, animateScroll as scroll } from 'react-scroll'
 
-import { theme, media } from '../styles'
+import { theme, media, NavButton } from '../styles'
 import Logo from '../images/DScrop.png'
 // TODO: Add social links?
 
@@ -65,10 +65,58 @@ const NavLink = styled(ScrollLink)`
   &:hover {
     color: ${theme.colors.lightGray}
   }
+  ${media.small} {
+    display: none;
+  }
 `
 
-const NavButton = styled.div`
+// const NavButton = styled.div``
+
+const MobileNavContainer = styled.div`
+  position: fixed;
+
+  &.closed {
+    visibility: hidden;
+  }
+` 
+
+const MobileNavOverlay = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0;
+  z-index: -1;
+  transition: ${theme.transition};
+  transition-delay: .3s;
+  &.open {
+    opacity: 1;
+    transition-delay: 0s;
+  }
 `
+const MobileNav = styled.div`
+  max-height: 500px;
+  width: 100vw;
+  transform: translateY(-100vh);
+  background-color: ${theme.colors.light};
+  padding: 5em 4em;
+  opacity: 1;
+  z-index: 100;
+  transition: ${theme.transition};
+  box-shadow: ${theme.boxShadow};
+  transition-delay: .4s;
+  &.open {
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+
+
+` 
+const MobileNavLinks = styled.div`` 
+const MobileNavLink = styled(ScrollLink)`` 
+
 
 const Navigation = () => {
 
@@ -108,14 +156,24 @@ const Navigation = () => {
       ${openNav ? 'open' : 'closed'}
       ${isMounted ? 'mounted' : 'not-mounted' } 
     `} scrollHeight={scrollHeight}>
+      <MobileNavContainer className={`${openNav ? 'open' : 'closed'}`}>
+        <MobileNav className={`${openNav ? 'open' : 'closed'}`}>
+          <MobileNavLinks>
+            <MobileNavLink href="#projects" offset={-30} to="projects" {...scrollOptions}>Project</MobileNavLink>
+            <MobileNavLink href="#experience" offset={-30} to="projects" {...scrollOptions}>Experience</MobileNavLink>
+            <MobileNavLink href="#contact" offset={-30} to="projects" {...scrollOptions}>Contact</MobileNavLink>
+          </MobileNavLinks>
+        </MobileNav>
+        <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
+      </MobileNavContainer>
       <Nav className={ scrolledTop ? 'top' : 'scrolled'}>
         <a onClick={() => scroll.scrollToTop()}>
           <NavLogo className={scrolledTop ? 'top' : 'scrolled'} src={Logo} alt="Dan Sack Web Dev" />
         </a>
         <NavRight className={scrolledTop ? 'top' : 'scrolled'}>
-          <NavLink href="#projects" offset={-120} to="projects" {...scrollOptions}>Projects</NavLink>
-          <NavLink href="#projects" offset={-120} to="projects" {...scrollOptions}>Experience</NavLink>
-          <NavLink href="#projects" offset={-120} to="projects" {...scrollOptions}>Contact</NavLink>
+          <NavLink href="#projects" offset={-30} to="projects" {...scrollOptions}>Projects</NavLink>
+          <NavLink href="#experience" offset={-30} to="experience" {...scrollOptions}>Experience</NavLink>
+          <NavLink href="#contact" offset={-120} to="contact" {...scrollOptions}>Contact</NavLink>
           <NavButton
             onClick={() => updateOpenNav(!openNav)}
             className={`${openNav ? 'open' : 'closed'} ${scrolledTop ? 'top' : 'scrolled'}`}
