@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Dan Sack | Web Dev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Portfolio to showcase my skills, experience, and passions `,
     author: `Dan Sack`,
   },
   plugins: [
@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dan Sack Portfolio`,
-        short_name: `Dan Sack`,
+        name: `Dan Sack Web Dev Portfolio`,
+        short_name: `Dan Sack Portfolio`,
         start_url: `/`,
         background_color: `#1E2749`,
         theme_color: `#1E2749`,
@@ -92,13 +92,6 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.1,
-      }
-    },
-    {
-      resolve: `gatsby-plugin-remote-images`,
-      options: {
-        nodeType: 'projectsJson',
-        imagePath: 'nodes[].img'
       }
     },
     {

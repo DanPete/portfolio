@@ -10,6 +10,8 @@ const path = require('path')
 
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
+ 
+
   if (node.internal.type === 'MarkdownRemark') {
     const slug = path.basename(node.fileAbsolutePath, '.md')
 
@@ -25,43 +27,49 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const template = path.resolve('./src/templates/project.js')
 
-  const res = await graphql(`
-    query {
-      allMarkdownRemark( sort: { fields: frontmatter___date, order: DESC }){
-        edges {
-          node {
-            fields {
-              slug
-            }
-          }
-          next {
-            fields {
-              slug
-            }
-          }
-          previous {
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const res = await graphql(`
+  //   query {
+  //     allMarkdownRemark( sort: { fields: frontmatter___date, order: DESC }){
+  //       edges {
+  //         node {
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //         next {
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //         previous {
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
-  res.data.allMarkdownRemark.edges.forEach((edge) => {
-    const { slug } = edge.node.fields
-    const { next, previous } = edge
-    createPage({
-      component: template,
-      path: `/project/${slug}`,
-      context: {
-        slug: slug,
-        next,
-        previous,
-      }
-    })
-  })
+  // res.data.allMarkdownRemark.edges.forEach((edge) => {
+  //   const { slug } = edge.node.fields
+  //   const { next, previous } = edge
+  //   createPage({
+  //     component: template,
+  //     path: `/project/${slug}`,
+  //     context: {
+  //       slug: slug,
+  //       next,
+  //       previous,
+  //     }
+  //   })
+  // })
+}
+
+module.exports.onCreatePage = async({ page, actions: { deletePage }}) => {
+  if (page.path.match(/^\/about/)) {
+    deletePage(page)
+  }
 }
 
 module.exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
