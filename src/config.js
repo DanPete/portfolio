@@ -22,7 +22,7 @@ module.exports = {
     {
       text: "View Resume",
       icon: "resume",
-      url: '/resume.pdf'
+      url: '/dan_sack_resume.pdf'
     }
   ]
 }

@@ -44,11 +44,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Dan Sack Portfolio`,
+        short_name: `Dan Sack`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1E2749`,
+        theme_color: `#1E2749`,
         display: `minimal-ui`,
         icon: `src/images/DScrop.png`, // This path is relative to the root of the site.
       },
