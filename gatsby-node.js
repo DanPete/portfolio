@@ -67,7 +67,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
 }
 
 module.exports.onCreatePage = async({ page, actions: { deletePage }}) => {
-  if (page.path.match(/^\/about/)) {
+  const { NODE_ENV } = process.env
+  temporaryHiddenPages = ['/project/', '/contact/', '/about/']
+  if (temporaryHiddenPages.includes(page.path)) {
     deletePage(page)
   }
 }
