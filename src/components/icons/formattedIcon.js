@@ -24,6 +24,7 @@ import {
   IconSquarespace,
   IconStyled,
   IconWordpress,
+  IconGraphql,
   IconLiquid,
   IconEmail,
   IconResume
@@ -79,6 +80,8 @@ const FormattedIcon = ({ icon }) => {
       return <IconWordpress />
     case 'liquid':  
       return <IconLiquid />
+    case 'graphql':  
+      return <IconGraphql />
     case 'email':  
       return <IconEmail />
     case 'resume':  
@@ -89,7 +92,7 @@ const FormattedIcon = ({ icon }) => {
 };
 
 FormattedIcon.propTypes = {
-  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default FormattedIcon;

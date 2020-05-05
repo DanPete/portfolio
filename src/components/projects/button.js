@@ -26,7 +26,6 @@ const Link = styled.a`
 `
 
 const Button = ({text, to}) => {
-  console.log(to)
   return (
     <Link href={to} target="_blank" rel="noopener noreferrer">
       {text}

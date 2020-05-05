@@ -2,30 +2,33 @@
   {
     "company": "SAIO",
     "dates": "March 2019 — Current",
-    "position": "Front End Developer",
-    "copy": "Some text here to describe what I do at this job. Some text here to describe what I do at this job. Some text here to describe what I do at this job.",
+    "position": "Frontend Developer",
+    "copy": "SAIO is an eCommerce agency centering on the development of Shopify stores and apps. My role focuses on Frontend development and building apps with Node.js and Rails.",
     "skills": [
       "Shopify",
-      "Wordpress",
+      "Liquid",
       "HTML / SCSS",
-      "Figma",
+      "Node.js",
+      "Rails",
       "React",
-      "Ruby on Rails"
+      "Redux"
     ],
     "open": true
   },
   {
     "company": "Self",
     "dates": "January 2017 — Current",
-    "position": "Freelancing",
-    "copy": "Some text here to describe what I do at this job. Some text here to describe what I do at this job. Some text here to describe what I do at this job.",
+    "position": "Freelance Web Developer",
+    "copy": "While working in other fields, I developed a strong interest and skill set in web development. I found a lot of joy in helping others to create, modernize, and optimize their websites. I love providing solutions to technological challenges and assisting clients to reach their goals. Now, as a freelance web developer, I’ve created and enhanced over 20 websites.",
     "skills": [
       "Shopify",
       "Wordpress",
+      "Squarespace",
       "HTML / SCSS",
       "Figma",
-      "React",
-      "Ruby on Rails"
+      "JavaScript",
+      "Hosting",
+      "Google Ads & Analytics"
     ],
     "open": false
   }

@@ -4,7 +4,7 @@ import Sal from '../sal'
 
 import { theme, media } from '../../styles'
 // import Image from './image'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Skills from './skills'
@@ -48,9 +48,12 @@ const Title = styled.h3`
   margin: 0.5em 0;
 `
 
-const Description = styled.p`
+const Description = styled.div`
   margin-bottom: 1em;
-  color: ${theme.colors.dark}
+  color: ${theme.colors.dark};
+  p {
+    margin: 1em;
+  }
 `
 
 const Footer = styled.div`
@@ -65,8 +68,7 @@ const Footer = styled.div`
 
 
 
-const ProjectCard = ({title, excerpt, skills, link, featuredImage: img}) => {
-  console.log(link)
+const ProjectCard = ({title, excerpt, skills, link, html, featuredImage: img}) => {
   return (
     <Sal>
       <ProjectContainer>
@@ -76,7 +78,7 @@ const ProjectCard = ({title, excerpt, skills, link, featuredImage: img}) => {
               <Img fluid={img.childImageSharp.fluid} />
             </ImageContainer>
             <Title>{title}</Title>
-            <Description>{excerpt}</Description>
+            <Description dangerouslySetInnerHTML={{ __html: html }}></Description>
           </Content>
           <Footer>
             <Skills items={skills}/>

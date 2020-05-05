@@ -27,7 +27,6 @@ const ProjectGrid = styled.div`
 `
 
 const Projects = ({ data }) => {
-  console.log(data)
   return (
     <Section bgColor={theme.colors.light} id="projects">
       <Element name="projects"/>
@@ -36,10 +35,9 @@ const Projects = ({ data }) => {
           <Title>Projects</Title>
         </Sal>
         <ProjectGrid>
-          {data.map((projectNode, i) => {
-            const project = projectNode.node.frontmatter
-            console.log(project.featuredImage)
-            return <ProjectCard key={i} {...project}/>
+          {data.map(({ node }, i) => {
+            const project = node.frontmatter
+            return <ProjectCard key={i} {...project} html={node.html}/>
           })}
         </ProjectGrid>
       </Container>

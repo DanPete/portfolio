@@ -172,7 +172,6 @@ const Hero = ({ data, bgColor }) => {
   const five = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
   
   const items = [one, two, three, four, five]
-  console.log(theme.colors.gray)
   return (
     <HeroWrapper bgColor={bgColor}>
       <Element name="hero" />

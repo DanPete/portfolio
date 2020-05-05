@@ -1,8 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
-import { media, theme} from '../styles'
+import { media } from '../styles'
 
-import HomeIcon from '../images/svgs/user-male.svg'
 import Logo from '../images/DSsm.png'
 import WorkIcon from '../images/svgs/briefcase.svg'
 import AboutIcon from '../images/svgs/about.svg'

@@ -4,9 +4,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 
 
-import PageWidth from '../components/layouts/pagewidth'
-import Section from '../components/layouts/section'
-
 import Hero from '../components/hero'
 import Projects from '../components/projects'
 import Experience from '../components/experience'
@@ -89,8 +86,26 @@ export const query = graphql`
         }
       }
     }
+
   }
-`
+  `
+    // insta: allInstaNode(
+    //   sort: {fields: timestamp, order: DESC},
+    //   limit: 9
+    // ) {
+    //   edges {
+    //     node {
+    //       username
+    //       localFile {
+    //         childImageSharp {
+    //           fixed( width: 125, height: 125) {
+    //             ...GatsbyImageSharpFixed
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
 
 

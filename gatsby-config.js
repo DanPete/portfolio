@@ -100,6 +100,12 @@ module.exports = {
         nodeType: 'projectsJson',
         imagePath: 'nodes[].img'
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `dan_pete_`,
+      },
+    },
   ],
 }

@@ -22,13 +22,7 @@ const ExperienceContainer = styled.div`
   }
 `
 
-const JobsContainer = styled.div`
-
-`
-
-const SkillsContainer = styled.div`
-
-`
+const JobsContainer = styled.div``
 
 const Experience = ({experiences, skills}) => {
   

@@ -38,8 +38,8 @@ Sal.defaultProps = {
   children: null,
   animation: 'slide-up',
   duration: '700',
-  delay: '0',
-  easing: '',
+  delay: '100',
+  easing: 'ease',
 };
 
 export default Sal

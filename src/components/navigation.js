@@ -2,7 +2,7 @@ import React, {useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link as ScrollLink, Events, animateScroll as scroll } from 'react-scroll'
 
-import { theme, media, NavButton } from '../styles'
+import { theme, media, mixins } from '../styles'
 import Logo from '../images/DScrop.png'
 // TODO: Add social links?
 
@@ -70,7 +70,9 @@ const NavLink = styled(ScrollLink)`
   }
 `
 
-// const NavButton = styled.div``
+const NavButton = styled.div`
+  ${mixins.navButton}
+`
 
 const MobileNavContainer = styled.div`
   position: fixed;
@@ -180,7 +182,7 @@ const Navigation = () => {
         <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
       </MobileNavContainer>
       <Nav className={ scrolledTop ? 'top' : 'scrolled'}>
-        <a onClick={() => scroll.scrollToTop()}>
+        <a href="#hero" onClick={() => scroll.scrollToTop()}>
           <NavLogo className={`${scrolledTop ? 'top' : 'scrolled'} ${openNav ? 'open' : 'closed'}`} src={Logo} alt="Dan Sack Web Dev" />
         </a>
         <NavRight className={scrolledTop ? 'top' : 'scrolled'}>

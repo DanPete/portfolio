@@ -22,6 +22,7 @@ export { default as IconSquarespace } from './squarespace';
 export { default as IconStyled } from './styled';
 export { default as IconWordpress } from './wordpress';
 export { default as IconLiquid } from './liquid';
+export { default as IconGraphql } from './graphql';
 export { default as IconEmail } from './email';
 export { default as IconResume } from './resume';
 export { default as FormattedIcon } from './formattedIcon';

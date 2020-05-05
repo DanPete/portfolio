@@ -8,4 +8,4 @@ excerpt: 'Custom WordPress theme'
 link: 'https://misb.ro/'
 ---
 
-Create custom WordPress theme to replace older website.
+I created a WordPress site for a school that needed to optimize communication and market their services. They requested a modern, yet approachable aesthetic that remained user-friendly for the client to edit and update information.

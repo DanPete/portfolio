@@ -21,6 +21,7 @@ export const MarkdownFragment = graphql`
         fields {
           slug
         }
+        html
       }
     }
   }

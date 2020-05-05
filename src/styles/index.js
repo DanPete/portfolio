@@ -4,13 +4,13 @@ import Container from './container'
 import Section from './section'
 import media from './media'
 import GlobalStyles from './GlobalStyles'
-import NavButton from './navButton'
+import mixins from './mixins'
 
 export {
   theme,
   Container,
   Section,
   media,
+  mixins,
   GlobalStyles,
-  NavButton
 }

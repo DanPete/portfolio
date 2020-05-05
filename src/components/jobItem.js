@@ -118,7 +118,6 @@ const Tech = styled.ul`
 const JobItem = ({company, dates, position, copy, skills, open}) => {
 
   const [isOpen, updateIsOpen] = useState(open);
-  console.log(arrow)
 
   return (
     <ExperienceContainer className={isOpen ? 'open' : ''}>

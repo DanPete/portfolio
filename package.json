@@ -25,6 +25,7 @@
     "gatsby-remark-images": "^3.2.4",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-source-instagram": "^0.7.0",
     "gatsby-transformer-json": "^2.4.0",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",

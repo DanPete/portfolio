@@ -1,5 +1,8 @@
 module.exports = {
-  contactCopy: "I'm currently open to opportunities and would love to hear from you! Contact me or get to know me more by any of these methods.",
+  contactCopy: [
+    'I\'m currently open to new opportunities and would love to hear from you!', 
+    'Learn more about my passions and skillset and contact me via the channels below.'
+  ],
   contactLinks: [
     {
       text: "Email Me",

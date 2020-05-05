@@ -1,6 +1,6 @@
 [
   {
-    "title": "Front End",
+    "title": "Frontend",
     "skills": [
       {
         "name": "JavaScript",
@@ -54,7 +54,7 @@
     "open": true
   },
   {
-    "title": "Back End",
+    "title": "Backend",
     "skills": [
       {
         "name": "Node.js",
@@ -87,6 +87,10 @@
       {
         "name": "D3",
         "icon": "dthree"
+      },
+      {
+        "name": "GraphQL",
+        "icon": "graphql"
       }
     ],
     "open": false
