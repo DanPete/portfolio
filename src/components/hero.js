@@ -148,8 +148,8 @@ const Hero = ({ data, bgColor }) => {
     query {
       file(relativePath: {eq: "ds-photo-sq.jpeg"}) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

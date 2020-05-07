@@ -12,8 +12,8 @@ export const MarkdownFragment = graphql`
           link
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 600) {
-                ...GatsbyImageSharpFluid
+              fluid(maxWidth: 650) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
