@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -32,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`${site.siteMetadata.title}`}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
@@ -49,6 +50,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.image,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
@@ -62,7 +67,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,

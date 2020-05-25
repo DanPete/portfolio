@@ -7,6 +7,7 @@ module.exports = {
     title: `Dan Sack | Web Dev`,
     description: `Portfolio to showcase my skills, experience, and passions `,
     author: `Dan Sack`,
+    image: `https://dansack.dev/DS.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

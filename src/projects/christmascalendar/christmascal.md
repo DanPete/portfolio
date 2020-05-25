@@ -1,5 +1,5 @@
 ---
-title: "Christmas Calendar App"
+title: "Christmas Deals App"
 date: "2019-11-01"
 skills: ['Rails', 'React', 'Redux', 'JavaScript']
 featuredImage: './christmascal.jpg'
