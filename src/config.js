@@ -1,6 +1,5 @@
 module.exports = {
   contactCopy: [
-    'I\'m currently open to new opportunities and would love to hear from you!', 
     'Learn more about my passions and skillset and contact me via the channels below.'
   ],
   contactLinks: [
@@ -24,5 +23,8 @@ module.exports = {
       icon: "resume",
       url: '/dan_sack_resume.pdf'
     }
+  ],
+  unusedCopy: [
+    'I\'m currently open to new opportunities and would love to hear from you!'
   ]
 }

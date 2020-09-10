@@ -19,7 +19,7 @@ const Footer = () => {
       © {new Date().getFullYear()} Dan Sack, Built with
       {` `}
       <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>. 
-      View the code <a href="https://github.com/DanPete/portfolio" target="_blank" rel="noopener noreferrer">on GitHub</a>.
+      View the code on <a href="https://github.com/DanPete/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>.
     </StyledFooter>
   )
 }

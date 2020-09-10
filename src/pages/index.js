@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Hero data={data.hero}/>
     <Projects data={data.mdProjects.edges} />
     <Experience experiences={data.experience.edges} skills={data.skills.edges}/>
