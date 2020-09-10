@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO />
+    <SEO title="Dan Sack | Web Dev" />
     <Hero data={data.hero}/>
     <Projects data={data.mdProjects.edges} />
     <Experience experiences={data.experience.edges} skills={data.skills.edges}/>
