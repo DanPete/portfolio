@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
     <Projects data={data.mdProjects.edges} />
     <Experience experiences={data.experience.edges} skills={data.skills.edges}/>
     <Contact />
-    
+
 
   </Layout>
 )
@@ -36,7 +36,11 @@ export const query = graphql`
       companyURL
       subtitle
       copy
-      subCopy
+      subCopy,
+      avatar,
+      avatarLink,
+      providence,
+      providenceLink,
     }
 
     projects: allProjectsJson {

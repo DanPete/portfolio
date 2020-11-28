@@ -1,7 +1,24 @@
 [
   {
+    "company": "Skup",
+    "dates": "July 2020 — Current",
+    "position": "Lead Theme Developer",
+    "copy": "Skup is a leading provider in educational resources, themes, and apps for entrepreneurs on Shopify. I lead efforts to develop powerful and user friendly themes that help our customers find the most success when starting and growing their Shopify stores.",
+    "skills": [
+      "JavaScript",
+      "Liquid",
+      "HTML / SCSS",
+      "TailwindCSS",
+      "Webpack",
+      "Jenkins",
+      "Python",
+      "Gulp"
+    ],
+    "open": true
+  },
+  {
     "company": "SAIO",
-    "dates": "March 2019 — Current",
+    "dates": "March 2019 — July 2020",
     "position": "Frontend Developer",
     "copy": "SAIO is an eCommerce agency centering on the development of Shopify stores and apps. My role focuses on Frontend development and building apps with Node.js and Rails.",
     "skills": [
@@ -13,7 +30,7 @@
       "React",
       "Redux"
     ],
-    "open": true
+    "open": false
   },
   {
     "company": "Self",
@@ -32,5 +49,5 @@
     ],
     "open": false
   }
-  
+
 ]

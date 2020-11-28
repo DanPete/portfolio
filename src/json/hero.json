@@ -3,10 +3,14 @@
     "intro": "Hi, I'm",
     "name": "Dan Sack.",
     "copy": "I'm a Web Developer at",
-    "company": "SAIO.",
-    "companyURL": "https://apps.shopify.com/partners/saio-apps",
+    "company": "Skup.",
+    "companyURL": "https://skup.net/",
     "subtitle": "Web Developer",
-    "subCopy": "Within a Shopify Expert eCommerce agency, I work with React and Node.js to make exceptional websites and apps.",
+    "subCopy": "Creating premium Shopify themes and apps. Check them out!",
+    "avatar": "Avatar",
+    "avatarLink": "https://avatartheme.com/",
+    "providence": "Providence",
+    "providenceLink": "https://themes.shopify.com/themes/providence/styles/seaside",
     "unusedCopy": "I’m currently in search of new opportunities."
   }
 ]

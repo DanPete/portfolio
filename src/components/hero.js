@@ -16,7 +16,7 @@ import { Element } from 'react-scroll'
 //   @media (min-width: 1200px) {
 //     grid-template-columns: 1fr 2fr;
 //     top: 5px;
-//   } 
+//   }
 
 // `
 const HeroWrapper = styled.div`
@@ -98,10 +98,33 @@ const HeroSubCopy = styled.h5`
   color: ${theme.colors.gray};
   max-width: 480px;
   margin-bottom: 0.7rem;
+`
+const HeroSubCopyLink = styled.a`
+  color: ${theme.colors.yellow};
+  line-height: 2.5rem;
+  font-size: 1.75rem;
 
-  ${media.medium} {
-    font-size: 1rem;
+  ${media.mediumUp} {
+    margin-right: 2rem;
   }
+
+  &:hover {
+    color: ${theme.colors.darkBlue};
+    text-shadow: -1px -1px 0 ${theme.colors.yellow}, 1px -1px 0 ${theme.colors.yellow}, -1px 1px 0 ${theme.colors.yellow}, 1px 1px 0 ${theme.colors.yellow};
+    cursor:pointer;
+  }
+`
+
+const HeroSubCopyContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+
+  ${media.mediumUp} {
+    justify-content: flex-start;
+    margin-bottom: inherit;
+  }
+
 `
 
 const HeroLink = styled.a`
@@ -169,9 +192,13 @@ const Hero = ({ data, bgColor }) => {
     <HeroLink href={data.companyURL} target="_blank"> {data.company}</HeroLink>
   </HeroCopy>)
   const four = () => <HeroSubCopy style={{ transitionDelay: '500ms'}}>{data.subCopy}</HeroSubCopy>
-  const five = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
-  
-  const items = [one, two, three, four, five]
+  const five = () => <HeroSubCopyContainer>
+                      <HeroSubCopyLink href={data.providenceLink} target="_blank" style={{ transitionDelay: '500ms'}}>{data.providence}</HeroSubCopyLink>
+                      <HeroSubCopyLink href={data.avatarLink} target="_blank" style={{ transitionDelay: '500ms'}}>{data.avatar}</HeroSubCopyLink>
+                    </HeroSubCopyContainer>
+  const six = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
+
+  const items = [one, two, three, four, five, six]
   return (
     <HeroWrapper bgColor={bgColor}>
       <Element name="hero" />
