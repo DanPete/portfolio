@@ -185,18 +185,31 @@ const Hero = ({ data, bgColor }) => {
     setTimeout(() => setIsMounted(true), 1000)
   }, [])
 
-  const one = () => <HeroSubCopy style={{ transitionDelay: '200ms', color: 'white'}}>{data.intro}</HeroSubCopy>
-  const two = () => <HeroText style={{ transitionDelay: '300ms'}}>{data.name}</HeroText>
-  const three = () => (<HeroCopy style={{ transitionDelay: '400ms'}}>
+  const delay = {
+    one: '200ms',
+    two: '300ms',
+    three: '400ms',
+    four: '500ms',
+    five: '800ms',
+    six: '1000ms',
+  }
+
+  const one = () => <HeroSubCopy style={{ transitionDelay: delay.one, color: 'white'}}>{data.intro}</HeroSubCopy>
+  const two = () => <HeroText style={{ transitionDelay: delay.two }}>{data.name}</HeroText>
+  const three = () => (<HeroCopy style={{ transitionDelay: delay.three }}>
     {data.copy}
     <HeroLink href={data.companyURL} target="_blank"> {data.company}</HeroLink>
   </HeroCopy>)
-  const four = () => <HeroSubCopy style={{ transitionDelay: '500ms'}}>{data.subCopy}</HeroSubCopy>
-  const five = () => <HeroSubCopyContainer>
-                      <HeroSubCopyLink href={data.providenceLink} target="_blank" style={{ transitionDelay: '500ms'}}>{data.providence}</HeroSubCopyLink>
-                      <HeroSubCopyLink href={data.avatarLink} target="_blank" style={{ transitionDelay: '500ms'}}>{data.avatar}</HeroSubCopyLink>
+  const four = () => <HeroSubCopy style={{ transitionDelay: delay.four }}>{data.subCopy}</HeroSubCopy>
+  const five = () => <HeroSubCopyContainer style={{ transitionDelay: delay.five }}>
+                      <HeroSubCopyLink href={data.providenceLink} target="_blank" style={{ transitionDelay: '500ms'}}>
+                        {data.providence}
+                      </HeroSubCopyLink>
+                      <HeroSubCopyLink href={data.avatarLink} target="_blank" style={{ transitionDelay: '500ms'}}>
+                        {data.avatar}
+                      </HeroSubCopyLink>
                     </HeroSubCopyContainer>
-  const six = () => <div style={{ transitionDelay: '600ms' }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
+  const six = () => <div style={{ transitionDelay: delay.six }}><HeroCTA href="mailto:dsack7@gmail.com" >Contact Me</HeroCTA></div>
 
   const items = [one, two, three, four, five, six]
   return (

@@ -34,7 +34,6 @@ export const query = graphql`
       name
       company
       companyURL
-      subtitle
       copy
       subCopy,
       avatar,
