@@ -63,21 +63,6 @@ module.exports = {
         path: `${__dirname}/src/json/`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Raleway`,
-    //         variants: [`300`, `500`, `600`]
-    //       },
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`400`, `700`]
-    //       },
-    //     ],
-    //   },
-    // },
     "gatsby-plugin-sass",
     // "gatsby-plugin-theme-ui",
     "gatsby-plugin-styled-components",
@@ -94,12 +79,6 @@ module.exports = {
       options: {
         threshold: 0.1,
       }
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `dan_pete_`,
-      },
     },
   ],
 }

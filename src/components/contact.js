@@ -90,18 +90,6 @@ const Contact = () => {
           </Content>
         </Sal>
         </LeftSide>
-        {/* <RightSide>
-        <Sal>
-          <Insta>
-            {insta.map((gram, i) => (
-              <a href="https://instagram.com/dan_pete_" target="_blank" rel="noopener noreferrer">
-                <Img fixed={gram.node.localFile.childImageSharp.fixed} />
-              </a>
-              )
-            )}
-          </Insta>
-        </Sal>
-        </RightSide> */}
       </ContactContainer>
     </Section>
   )
