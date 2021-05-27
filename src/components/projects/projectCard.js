@@ -14,7 +14,7 @@ const ProjectContainer = styled.div`
   transition: ${theme.transition};
   position: relative;
   height: 100%;
-  
+
   ${media.largeUp} {
     &:hover {
       transform: translateY(-20px)
@@ -34,7 +34,7 @@ const ProjectInner = styled.div`
 `
 
 const Content = styled.div`
-  
+
 `
 
 const ImageContainer = styled.div`
@@ -89,9 +89,9 @@ const ProjectCard = ({title, excerpt, skills, link, html, featuredImage: img}) =
     </Sal>
   )
 }
-  
+
   export default ProjectCard
-  
+
   // return (
   //   <Link to={`/project/${slug}`} style={{textDecoration: 'none'}}>
   //     <Card>
@@ -114,7 +114,7 @@ const ProjectCard = ({title, excerpt, skills, link, html, featuredImage: img}) =
 //   &:hover {
 //     transform: translate(0, -10px);
 //   }
-  
+
 // `
 
 // const CardInfo = styled.div`
