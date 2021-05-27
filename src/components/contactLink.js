@@ -12,7 +12,7 @@ const Container = styled.a`
   border-radius: 0.5rem;
   color: ${theme.colors.darkBlueLighter};
   background-color: ${theme.colors.light};
-  border: 1px solid ${theme.colors.clearlinkBlue};
+  border: 1px solid ${theme.colors.darkBlueLighter};
   box-shadow: ${theme.boxShadow};
   display: inline-block;
   transition: all 0.2s;

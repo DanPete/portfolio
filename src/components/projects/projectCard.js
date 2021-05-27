@@ -16,9 +16,9 @@ const ProjectContainer = styled.div`
   height: 100%;
 
   ${media.largeUp} {
-    &:hover {
+    /* &:hover {
       transform: translateY(-20px)
-    }
+    } */
   }
 `
 
