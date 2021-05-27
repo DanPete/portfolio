@@ -80,11 +80,5 @@ module.exports = {
         threshold: 0.1,
       }
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `dan_pete_`,
-      },
-    },
   ],
 }
